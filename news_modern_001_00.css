@@ -1,0 +1,6 @@
+/* Layout */
+.site-header, .site-footer{
+  background:#111;
+  color:#fff;
+  padding:20px;
+}
