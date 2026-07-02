@@ -1,0 +1,330 @@
+.category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:clamp(2rem,4vw,3.8rem);
+
+    line-height:1.25;
+
+    max-width:900px;
+
+    margin-bottom:30px;
+
+    font-weight:700;
+
+}
+
+.meta{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    font-size:.95rem;
+
+    opacity:.95;
+
+}
+
+/* ==========================================================
+   BREADCRUMB
+========================================================== */
+
+.breadcrumb{
+
+    background:#fff;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.breadcrumb .container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    min-height:56px;
+
+    color:#666;
+
+    font-size:.9rem;
+
+}
+
+.breadcrumb a{
+
+    color:#666;
+
+}
+
+.breadcrumb a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================================
+   LEAD
+========================================================== */
+
+.lead{
+
+    padding:60px;
+
+}
+
+.lead p{
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    color:#444;
+
+}
+
+/* ==========================================================
+   FEATURE IMAGE
+========================================================== */
+
+.featured-image{
+
+    margin:0 60px 60px;
+
+}
+
+.featured-image img{
+
+    border-radius:14px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.featured-image figcaption{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-top:15px;
+
+    font-size:.9rem;
+
+}
+/* ==========================================================
+   News Modern 001
+   style.css
+
+   Part 2
+   -----------------------------------------
+   ・Article
+   ・Heading
+   ・TOC
+   ・Point Box
+   ・Quote
+   ・Image Grid
+   ・Table
+========================================================== */
+
+/* ==========================================================
+   ARTICLE
+========================================================== */
+
+.article section{
+    padding:0 60px 60px;
+}
+
+.article p{
+    margin-bottom:1.5rem;
+    color:#444;
+    line-height:2;
+    font-size:1rem;
+}
+
+.article h2{
+    position:relative;
+    margin:70px 0 30px;
+    padding-bottom:16px;
+    font-size:2rem;
+    font-weight:700;
+    line-height:1.4;
+    color:#222;
+}
+
+.article h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:70px;
+    height:4px;
+    border-radius:999px;
+    background:var(--primary);
+}
+
+.article h3{
+    margin:40px 0 18px;
+    font-size:1.35rem;
+    font-weight:700;
+    color:#222;
+}
+
+/* ==========================================================
+   TOC
+========================================================== */
+
+.toc{
+    margin:0 60px 60px;
+    padding:35px;
+    background:#f8fafc;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+}
+
+.toc h2{
+    margin:0 0 20px;
+    padding:0;
+    font-size:1.2rem;
+}
+
+.toc h2::after{
+    display:none;
+}
+
+.toc ol{
+    margin:0;
+    padding-left:20px;
+}
+
+.toc li{
+    margin:14px 0;
+}
+
+.toc a{
+    color:var(--text);
+    font-weight:600;
+}
+
+.toc a:hover{
+    color:var(--primary);
+}
+
+/* ==========================================================
+   POINT BOX
+========================================================== */
+
+.point-box{
+    margin-top:35px;
+    padding:35px;
+    border-left:5px solid var(--primary);
+    border-radius:var(--radius);
+    background:#eff6ff;
+}
+
+.point-box h3{
+    margin:0 0 18px;
+    color:var(--primary);
+}
+
+.point-box ul{
+    margin:0;
+    padding-left:22px;
+}
+
+.point-box li{
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+/* ==========================================================
+   BLOCKQUOTE
+========================================================== */
+
+blockquote{
+    margin:45px 0;
+    padding:35px 40px;
+    border-left:5px solid var(--primary);
+    background:#fafafa;
+    border-radius:var(--radius);
+}
+
+blockquote p{
+    margin:0;
+    font-size:1.15rem;
+    font-style:italic;
+}
+
+blockquote cite{
+    display:block;
+    margin-top:18px;
+    color:#777;
+    font-size:.95rem;
+}
+
+/* ==========================================================
+   IMAGE GRID
+========================================================== */
+
+.image-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.grid-item{
+    overflow:hidden;
+    border-radius:var(--radius);
+    background:#fff;
+    box-shadow:var(--shadow);
+}
+
+.grid-item img{
+    width:100%;
+    transition:.4s;
+}
+
+.grid-item:hover img{
+    transform:scale(1.05);
+}
+
+.grid-item figcaption{
+    padding:25px;
+}
+
+.grid-item h3{
+    margin:0 0 12px;
+}
+
+.grid-item p{
+    margin:0;
+    color:#666;
+}
